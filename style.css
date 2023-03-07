@@ -1,0 +1,116 @@
+/* -----------------------------
+        Universal Selector
+  -------------------------- */
+
+* {margin: 0; padding: 0;}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #E5E5E5;
+}
+
+/* -------------------------------
+        Fonts
+    ---------------------------- */
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* ---------------------------------
+            Header / Nav Styles
+--------------------------------- */
+
+header {
+    background-color: #562EFF;
+}
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px 10%;
+}
+nav .logo {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo img {
+    width: 40px;
+    height: 50px;
+}
+.logo span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #ffff;
+    margin-left: 16px;
+}
+nav .menu {
+    display: flex;
+    justify-content: flex-end;
+}
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    column-gap: 36px;
+    align-items: center;
+}
+.menu ul li a {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+    color: #fff;
+
+}
+.profile-photo {
+    width: 50px;
+    height: 50px;
+}
+
+/* ----------------------------------------
+        Sections & Top Players Styles
+----------------------------------------- */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section {
+    width: 870px;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 36px;
+    padding-top: 33px;
+    padding-left: 33px;
+}
+.section-title {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #562EFF;
+    margin-bottom: 40px;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    margin-bottom: 30px;
+}
+.player {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+.player-image {
+    width: 56px;
+    height: 56px;
+}
+.player-name {
+    font-size: 18px;
+    line-height: 27px;
+    color: #000;
+    text-decoration: none;
+}
